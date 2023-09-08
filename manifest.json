@@ -1,0 +1,19 @@
+{
+  "name": "Return Old GitHub Feed",
+  "description": "Returns the actually usable feed design",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["replace.js"]
+    }
+  ]
+}
